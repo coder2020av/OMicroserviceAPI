@@ -16,7 +16,7 @@ Handling connection for 8000
 
 testing output at terminal 2 
 
-<paste log output from Kubernetes-mediated prediction, here>
+<input>
 
 
 (.devops) ubuntu@ip-172-31-36-120:~/Project_Microservices$ echo "Port: $PORT"
@@ -45,6 +45,8 @@ Port: 8000
 > }'\
 >      -H "Content-Type: application/json" \
 >      -X POST http://localhost:$PORT/predict
+
+<paste log output from Kubernetes-mediated prediction, here>
 {
   "prediction": [
     20.35373177134412
