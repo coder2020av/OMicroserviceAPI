@@ -1,5 +1,4 @@
 pylint
-scikit-learn == 0.20.3
 Click==7.1.1
 Flask==1.1.2
 itsdangerous==1.1.0
