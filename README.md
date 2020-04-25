@@ -1,4 +1,4 @@
-[![coder2020av](https://circleci.com/github/coder2020av/OMicroserviceAPI.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
+[![coder2020av](https://circleci.com/gh/<coder2020av>/OMicroserviceAPI.svg?style=svg&circle-token=34e70b94ee060a5db665eb3fe308b6497ec5e450)](https://circleci.com/gh/circleci/circleci-docs)
 
 ## Project Overview
 
