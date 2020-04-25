@@ -1,0 +1,52 @@
+
+running kubernetes cluster at terminal 1
+
+kubectl get pods
+NAME                         READY   STATUS              RESTARTS   AGE
+demolocal-74fc96c99d-5fs8s   0/1     ContainerCreating   0          12s
+ubuntu@ip-172-31-36-120:~$ kubectl get pods
+NAME                         READY   STATUS    RESTARTS   AGE
+demolocal-74fc96c99d-5fs8s   1/1     Running   0          31s
+ubuntu@ip-172-31-36-120:~$ kubectl port-forward deployment/demolocal 8000:80
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+Handling connection for 8000
+
+
+testing output at terminal 2 
+
+<paste log output from Kubernetes-mediated prediction, here>
+
+
+(.devops) ubuntu@ip-172-31-36-120:~/Project_Microservices$ echo "Port: $PORT"
+Port: 8000
+(.devops) ubuntu@ip-172-31-36-120:~/Project_Microservices$
+(.devops) ubuntu@ip-172-31-36-120:~/Project_Microservices$ # POST method predict
+(.devops) ubuntu@ip-172-31-36-120:~/Project_Microservices$ curl -d '{
+>    "CHAS":{
+>       "0":0
+>    },
+>    "RM":{
+>       "0":6.575
+>    },
+>    "TAX":{
+>       "0":296.0
+>    },
+>    "PTRATIO":{
+>       "0":15.3
+>    },
+>    "B":{
+>       "0":396.9
+>    },
+>    "LSTAT":{
+>       "0":4.98
+>    }
+> }'\
+>      -H "Content-Type: application/json" \
+>      -X POST http://localhost:$PORT/predict
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
