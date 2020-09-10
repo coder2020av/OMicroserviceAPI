@@ -31,9 +31,12 @@ I was given a pre-trained, `sklearn` model that has been trained to predict hous
 2. Run in Docker:  `./run_docker.sh`
 3. Run in Kubernetes:  `./run_kubernetes.sh`
 
-### Kubernetes Steps I used AWS Kubernetes as a service and ran kubectl because I could not enable virtualization or install kubernetes in my machine
+### Kubernetes 
+
 
 * Setup and Configure Docker locally
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+Note: I used AWS Kubernetes as a service and ran kubectl because I could not enable virtualization or install kubernetes in my machine
+
