@@ -38,5 +38,7 @@ I was given a pre-trained, `sklearn` model that has been trained to predict hous
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
-Note: I used AWS Kubernetes as a service and ran kubectl because I could not enable virtualization or install kubernetes in my machine
+
+Note: 
+Alternatively we can use AWS Kubernetes as a service and run kubectl
 
